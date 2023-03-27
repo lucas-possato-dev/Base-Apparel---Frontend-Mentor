@@ -90,7 +90,15 @@ body {
   color: hsl(0, 36%, 70%);
 }
 
+footer {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
 
+footer p {
+  text-align: center;
+}
 
 form {
   position: relative;
@@ -155,9 +163,7 @@ form button:hover {
   .info h1 {
     font-size: 3em;
   }
-  footer {
-    display: none;
-  }
+  
   .logo {
     display: none;
   }
@@ -179,6 +185,6 @@ form button:hover {
     width: 200px;
   }
   form button {
-    right: 80px;
+    right: 100px;
   }
 }
