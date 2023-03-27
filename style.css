@@ -1,0 +1,157 @@
+body, h1, p, a, ul, li, span {
+  padding: 0;
+  margin: 0;
+}
+
+html, 
+body {
+  height: 100vh;
+  min-width: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.structure {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-pattern-desktop.svg");
+}
+
+.info {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-desktop img {
+  height: 100%;
+}
+
+.logo {
+  margin-bottom: 120px;
+}
+
+.logo2 {
+  display: none;
+}
+
+.info h1 {
+  font-size: 4em;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.info span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.info p {
+  width: 380px;
+  font-size: 0.875em;
+  line-height: 1.6;
+  color: hsl(0, 36%, 70%);
+
+}
+
+.info-text  {
+  animation: slideRight 0.5s forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form input {
+  width: 380px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 36%, 70%);
+}
+
+.form input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+
+
+form {
+  position: relative;
+}
+
+form button {
+  position: absolute;
+  right: 0;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 17px 45px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px 0 hsl(0, 80%, 86%);
+}
+
+form label {
+  position: absolute;
+  right: 120px;
+  top: 15px;
+  display: none;
+}
+
+label.active {
+  display: block;
+}
+
+form button:hover {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+.error {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: none;
+}
+
+.error.active {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .structure {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img-desktop img  {
+    width: 100%;
+  }
+  .info {
+    display: grid;
+  }
+  footer {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+    padding: 30px;
+  }
+}
