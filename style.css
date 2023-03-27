@@ -28,7 +28,7 @@ body {
   align-items: center;
 }
 
-.img-desktop img {
+.img-desktopStructure img {
   height: 100%;
 }
 
@@ -138,11 +138,21 @@ form button:hover {
     display: flex;
     flex-direction: column-reverse;
   }
-  .img-desktop img  {
+  .structure {
+    justify-content: center;
+  }
+  
+  .img-desktop  {
     width: 100%;
   }
   .info {
     display: grid;
+    padding: 10px;
+    box-sizing: border-box;
+
+  }
+  .info h1 {
+    font-size: 3em;
   }
   footer {
     display: none;
